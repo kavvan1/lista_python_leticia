@@ -1,0 +1,11 @@
+print("bem vindo ao será taxado?")
+valor_total = float(input("Digite o valor total da mercadoria: R$ "))
+
+if valor_total <= 500:
+    imposto = 0
+    print(f"seuuuuu produto n foi taxadooo, ele continuou {valor_total}")
+else:
+    imposto = (valor_total - 500) * 50/100
+    valor_final = valor_total + imposto
+
+    print(f"Faz o LLLL que seu protudo foi taxadoooooooooo, ficou mais caro: {valor_final}")
