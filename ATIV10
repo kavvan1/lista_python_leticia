@@ -1,0 +1,22 @@
+while True:
+        numb = int(input("número inteiro maior que 1: "))
+        if numb > 1:
+            break
+        else:
+            print("Erro: O número deve ser maior que 1!")
+
+meu_primo = True
+
+if numb == 2:
+    meu_primo = True  
+elif numb % 2 == 0:
+    meu_primo = False  
+else:
+    for i in range(3, int(numb**50/100) + 1, 2):
+        if numb % i == 0:
+            meu_primo = False
+            break
+if meu_primo:
+    print(f"{numb} é primo!")
+else:
+    print(f"{numb} não é primo.")
