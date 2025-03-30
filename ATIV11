@@ -1,0 +1,10 @@
+while True:
+    print("\n Login ")
+    usuario = input("Usuário: ")
+    senha = input("Senha: ")
+    
+    if usuario == senha:
+        print("Erro: O nome de usuário não pode ser igual à senha!")
+    else:
+        print("Login feito")
+        break
