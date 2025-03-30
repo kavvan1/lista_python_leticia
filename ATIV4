@@ -1,0 +1,13 @@
+dias = int(input("dias alugado: "))
+km = float(input("km rodado: "))
+
+custo = dias * 90
+
+if km > 100:
+    taxa_km = (km - 100) * 12
+    total = custo + taxa_km
+else:
+    taxa_km = 0
+    total = custo + taxa_km
+
+print(f"resuldado das dispeças {total}")
