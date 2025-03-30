@@ -1,0 +1,15 @@
+while True:
+        n = int(input("número ímpar maior que 1: "))
+        if n > 1 and n % 2 != 0: 
+            break
+        else:
+            print("O número deve ser ímpar e maior que 1!")
+
+anterior = n - 2
+proximo = n + 2
+
+diferenca = proximo**2 - anterior**2
+
+print(f"Número ímpar anterior: {anterior} quadrado = {anterior**2}")
+print(f"Próximo número ímpar: {proximo} (quadrado = {proximo**2})")
+print(f"Diferença entre os quadrados: {proximo**2} - {anterior**2} = {diferenca}")
