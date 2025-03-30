@@ -1,0 +1,13 @@
+print("digite 3 notas")
+numb1 = float(input("Digite a primeira nota: "))
+numb2 = float(input("Digite a segunda nota: "))
+numb3 = float(input("Digite a terceira nota: "))
+
+media = (numb1 + numb2 + numb3) / 3
+print("A média aritmética das notas é:", media)
+
+media2 = (numb1 * 2 + numb2 * 2 + numb3 * 3) / (2 + 2 + 3)
+print("A média aritmética ponderada da é:", media2)
+
+media3 = (numb1 * 2 + numb2 * 2 + numb3 * 3) / (1 + 2 + 2)
+print("A média aritmética ponderada com peso 1,2,2  é:", media3)
