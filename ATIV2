@@ -1,0 +1,14 @@
+segundos = int(input("digite quantos segundos"))
+
+dias = segundos // 86400
+segundos_resto = segundos % 86400
+
+horas = segundos_resto // 3600
+segundos_resto = segundos_resto % 3600
+
+minutos = segundos_restantes // 60
+
+segundos = segundos_resto % 60
+
+print(f"\n{segundos} segundos equivalem a:")
+print(f"- {dias} dias, {horas} horas, {minutos} minutos e {segundos} segundos")
